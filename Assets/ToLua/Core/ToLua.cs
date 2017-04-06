@@ -206,7 +206,7 @@ namespace LuaInterface
 
                 if (LuaConst.openZbsDebugger)
                 {
-                    fileName = LuaFileUtils.Instance.FindFile(fileName);
+                    fileName = "@" + LuaFileUtils.Instance.FindFile(fileName);
                 }
 
                 if (LuaDLL.luaL_loadbuffer(L, buffer, buffer.Length, fileName) != 0)

@@ -77,6 +77,8 @@ local function functor(func, obj)
 	return st
 end
 
+---
+-- @type Event
 local _event = 
 {	
 	name	 = "",

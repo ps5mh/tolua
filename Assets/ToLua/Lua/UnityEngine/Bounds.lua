@@ -175,6 +175,7 @@ function Bounds:Destroy()
 end
 
 Bounds.__tostring = function(self)
+    if self == Bounds then return "UnityEngine.Bounds" end
 	return string.format("Center: %s, Extents %s", tostring(self.center), tostring(self.extents))
 end
 

@@ -6,7 +6,15 @@
 local math = math
 local floor = math.floor
 local abs = math.abs
+---
+-- @type Mathf
 local Mathf = Mathf
+
+---
+-- @function [parent=#Mathf] PerlinNoise
+-- @param #number x
+-- @param #number y
+-- @return #number
 
 Mathf.Deg2Rad = math.rad(1)
 Mathf.Epsilon = 1.4013e-45

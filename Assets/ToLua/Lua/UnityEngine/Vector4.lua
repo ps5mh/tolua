@@ -4,6 +4,9 @@
 --      Use, modification and distribution are subject to the "MIT License"
 --------------------------------------------------------------------------------
 
+---
+-- @module Vector4
+
 local clamp	= Mathf.Clamp
 local sqrt	= Mathf.Sqrt
 local min	= Mathf.Min
@@ -166,6 +169,7 @@ function Vector4.Max(lhs, rhs)
 end
 
 Vector4.__tostring = function(self)
+    if self == Vector4 then return "UnityEngine.Vector4" end
 	return string.format("[%f,%f,%f,%f]", self.x, self.y, self.z, self.w)
 end
 

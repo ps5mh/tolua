@@ -27,6 +27,8 @@ local _forward = Vector3.forward
 local _up = Vector3.up
 local _next = { 2, 3, 1 }
 
+---
+-- @type Quaternion
 local Quaternion = {}
 local get = tolua.initget(Quaternion)
 
@@ -579,6 +581,7 @@ Quaternion.__eq = function(lhs,rhs)
 end
 
 Quaternion.__tostring = function(self)
+    if self == Quaternion then return "UnityEngine.Quaternion" end
 	return "["..self.x..","..self.y..","..self.z..","..self.w.."]"
 end
 

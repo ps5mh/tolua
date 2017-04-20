@@ -3,6 +3,10 @@
 --      All rights reserved.
 --      Use, modification and distribution are subject to the "MIT License"
 --------------------------------------------------------------------------------
+
+---
+-- @module Vector3
+
 local math  = math
 local acos	= math.acos
 local sqrt 	= math.sqrt
@@ -484,6 +488,7 @@ end
 
 
 Vector3.__tostring = function(self)
+    if self == Vector3 then return "UnityEngine.Vector3" end
 	return "["..self.x..","..self.y..","..self.z.."]"
 end
 

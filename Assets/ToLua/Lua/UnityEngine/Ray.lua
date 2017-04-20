@@ -46,6 +46,7 @@ function Ray:Get()
 end
 
 Ray.__tostring = function(self)
+    if self == Ray then return "UnityEngine.Ray" end
 	return string.format("Origin:(%f,%f,%f),Dir:(%f,%f, %f)", self.origin.x, self.origin.y, self.origin.z, self.direction.x, self.direction.y, self.direction.z)
 end
 

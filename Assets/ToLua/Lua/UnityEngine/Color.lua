@@ -9,6 +9,8 @@ local setmetatable = setmetatable
 local type = type
 local Mathf = Mathf
 
+---
+-- @type Color
 local Color = {}
 local get = tolua.initget(Color)
 
@@ -183,6 +185,7 @@ function Color.GrayScale(a)
 end
 
 Color.__tostring = function(self)
+    if self == Color then return "UnityEngine.Color" end
 	return string.format("RGBA(%f,%f,%f,%f)", self.r, self.g, self.b, self.a)
 end
 

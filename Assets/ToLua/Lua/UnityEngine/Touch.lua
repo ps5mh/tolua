@@ -3,6 +3,10 @@
 --      All rights reserved.
 --      Use, modification and distribution are subject to the "MIT License"
 --------------------------------------------------------------------------------
+
+---
+-- @module Touch
+
 local zero = Vector2.zero
 local rawget = rawget
 local setmetatable = setmetatable

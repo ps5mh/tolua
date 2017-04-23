@@ -222,7 +222,13 @@ function Vector3.RotateTowards1(from, to, maxRadiansDelta, maxMagnitudeDelta)
 		return v1
 	end			
 end]]
-	
+
+---
+-- @function [parent=#Vector3] MoveTowards
+-- @param current
+-- @param target
+-- @param maxDistanceDelta
+-- @return #Vector3
 function Vector3.MoveTowards(current, target, maxDistanceDelta)	
 	local delta = target - current	
     local sqrDelta = delta:SqrMagnitude()

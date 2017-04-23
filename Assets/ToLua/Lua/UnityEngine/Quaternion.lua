@@ -3,6 +3,23 @@
 --      All rights reserved.
 --      Use, modification and distribution are subject to the "MIT License"
 --------------------------------------------------------------------------------
+
+
+---
+-- @module Quaternion
+
+---
+-- @type Quaternion
+
+---
+-- @field [parent=#Quaternion] #Quaternion identity
+
+---
+-- @function [parent=#Quaternion] eulerAngles
+-- @param self
+-- @return UnityEngine_Vector3#Vector3
+
+
 local math	= math
 local sin 	= math.sin
 local cos 	= math.cos
@@ -27,8 +44,6 @@ local _forward = Vector3.forward
 local _up = Vector3.up
 local _next = { 2, 3, 1 }
 
----
--- @type Quaternion
 local Quaternion = {}
 local get = tolua.initget(Quaternion)
 

@@ -16,6 +16,14 @@ local CoTimer = CoTimer
 local comap = {}
 setmetatable(comap, {__mode = "kv"})
 
+---
+-- @module coroutine
+
+---
+-- @type coroutine
+-- @extends coroutine#coroutine
+local coroutine = coroutine
+
 function coroutine.start(f, ...)	
 	local co = create(f)
 	

@@ -117,7 +117,6 @@ function Vector2:Sub(b)
 end
 
 Vector2.__tostring = function(self)
-    if self == Vector2 then return "UnityEngine.Vector2" end
 	return string.format("[%f,%f]", self.x, self.y)
 end
 

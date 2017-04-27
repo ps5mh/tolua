@@ -596,7 +596,6 @@ Quaternion.__eq = function(lhs,rhs)
 end
 
 Quaternion.__tostring = function(self)
-    if self == Quaternion then return "UnityEngine.Quaternion" end
 	return "["..self.x..","..self.y..","..self.z..","..self.w.."]"
 end
 

@@ -494,7 +494,6 @@ end
 
 
 Vector3.__tostring = function(self)
-    if self == Vector3 then return "UnityEngine.Vector3" end
 	return "["..self.x..","..self.y..","..self.z.."]"
 end
 
